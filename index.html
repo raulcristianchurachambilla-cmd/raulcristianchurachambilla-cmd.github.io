@@ -1,249 +1,356 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M.Sc. Romel Percy Melgarejo Bolivar | Perfil Profesional y Académico</title>
-    <style>
-        :root {
-            --primary: #1e3a8a;
-            --secondary: #0284c7;
-            --dark: #1f2937;
-            --light: #f3f4f6;
-            --white: #ffffff;
-            --accent: #f59e0b;
-        }
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            color: var(--dark);
-            background-color: var(--light);
-            line-height: 1.6;
-        }
-        header {
-            background: linear-gradient(135deg, var(--primary), var(--secondary));
-            color: var(--white);
-            padding: 4rem 1rem;
-            text-align: center;
-        }
-        header h1 {
-            font-size: 2.5rem;
-            margin-bottom: 0.5rem;
-        }
-        header p {
-            font-size: 1.2rem;
-            opacity: 0.9;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        .container {
-            max-width: 950px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-        section {
-            background-color: var(--white);
-            padding: 2rem;
-            margin-bottom: 1.5rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-        h2 {
-            color: var(--primary);
-            border-bottom: 2px solid var(--secondary);
-            padding-bottom: 0.4rem;
-            margin-bottom: 1.2rem;
-            font-size: 1.5rem;
-            display: flex;
-            align-items: center;
-            gap: 0.5rem;
-        }
-        p {
-            margin-bottom: 1rem;
-            text-align: justify;
-        }
-        ul {
-            list-style-type: none;
-        }
-        li {
-            margin-bottom: 1rem;
-            padding-left: 1.5rem;
-            position: relative;
-        }
-        li::before {
-            content: "▹";
-            position: absolute;
-            left: 0;
-            color: var(--secondary);
-            font-weight: bold;
-            font-size: 1.1rem;
-        }
-        .badge {
-            background-color: var(--light);
-            color: var(--primary);
-            padding: 0.2rem 0.6rem;
-            border-radius: 4px;
-            font-size: 0.85rem;
-            font-weight: bold;
-            display: inline-block;
-            margin-top: 0.3rem;
-        }
-        .project-title {
-            font-weight: bold;
-            color: var(--dark);
-        }
-        .btn-verify {
-            display: inline-flex;
-            align-items: center;
-            background-color: var(--primary);
-            color: var(--white);
-            padding: 0.5rem 1rem;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 0.85rem;
-            font-weight: bold;
-            margin-top: 0.5rem;
-            transition: background-color 0.3s;
-        }
-        .btn-verify:hover {
-            background-color: var(--secondary);
-        }
-        .grid-2 {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
-        }
-        @media (max-width: 768px) {
-            .grid-2 {
-                grid-template-columns: 1fr;
-            }
-            header h1 {
-                font-size: 2rem;
-            }
-        }
-        footer {
-            text-align: center;
-            padding: 3rem 1rem;
-            font-size: 0.9rem;
-            color: #6b7280;
-            background-color: #e5e7eb;
-            margin-top: 3rem;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV – Raul Cristian Chura Chambilla</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #f4f6f9; padding: 20px; }
+    .cv-wrap { max-width: 860px; margin: 0 auto; padding: 1.5rem 1rem; }
+    .header-card {
+      background: #002855;
+      border-radius: 12px;
+      padding: 2rem 2rem 1.5rem;
+      display: flex; align-items: center; gap: 1.75rem;
+      margin-bottom: 1.25rem;
+      position: relative; overflow: hidden;
+    }
+    .header-card::before {
+      content: '';
+      position: absolute; top: -30px; right: -30px;
+      width: 160px; height: 160px; border-radius: 50%;
+      background: rgba(255,255,255,0.04);
+    }
+    .header-card::after {
+      content: '';
+      position: absolute; bottom: -50px; right: 80px;
+      width: 100px; height: 100px; border-radius: 50%;
+      background: rgba(255,255,255,0.03);
+    }
+    .header-text h1 { font-size: 22px; font-weight: 500; color: #fff; margin-bottom: 4px; }
+    .header-text p  { font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 2px; }
+    .badges { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 8px; }
+    .badge { display: inline-block; font-size: 11px; border-radius: 20px; padding: 3px 10px; }
+    .badge-code { background: rgba(255,255,255,0.12); border: 0.5px solid rgba(255,255,255,0.25); color: rgba(255,255,255,0.85); }
+
+    .contact-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 10px; }
+    .contact-item { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: rgba(255,255,255,0.85); background: rgba(255,255,255,0.08); border: 0.5px solid rgba(255,255,255,0.18); border-radius: 20px; padding: 4px 10px; }
+    .contact-item i { font-size: 14px; }
+
+    .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem; }
+    .section-card { background: #fff; border: 0.5px solid #e0e0e0; border-radius: 12px; padding: 1.25rem 1.5rem; margin-bottom: 1rem; }
+    .section-card.no-mb { margin-bottom: 0; }
+    .section-title { font-size: 12px; font-weight: 500; letter-spacing: 0.07em; text-transform: uppercase; color: #666; display: flex; align-items: center; gap: 8px; margin-bottom: 1rem; padding-bottom: 0.6rem; border-bottom: 0.5px solid #e0e0e0; }
+    .section-title i { font-size: 15px; color: #1a56a0; }
+
+    .info-label { font-size: 11px; color: #999; margin-bottom: 2px; }
+    .info-value { font-size: 13px; color: #222; font-weight: 500; }
+
+    .tl-item { display: flex; gap: 1rem; padding: 0.7rem 0; border-bottom: 0.5px solid #e0e0e0; }
+    .tl-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .tl-dot { width: 8px; height: 8px; border-radius: 50%; background: #1a56a0; margin-top: 5px; flex-shrink: 0; }
+    .tl-title { font-size: 13px; font-weight: 500; color: #222; }
+    .tl-sub { font-size: 12px; color: #666; margin-top: 2px; }
+    .tl-tag { display: inline-block; font-size: 10px; background: #e8f0fb; color: #1a56a0; border-radius: 12px; padding: 2px 8px; margin-top: 4px; }
+    .tl-tag.green { background: #e6f4ea; color: #2d7a3a; }
+
+    .lang-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.6rem; }
+    .lang-card { background: #f8f8f8; border-radius: 8px; padding: 0.65rem 0.85rem; display: flex; justify-content: space-between; align-items: center; }
+    .lang-name { font-size: 13px; font-weight: 500; color: #222; }
+    .lang-level { font-size: 11px; color: #999; margin-top: 1px; }
+    .lang-dots { display: flex; gap: 3px; }
+    .dot { width: 7px; height: 7px; border-radius: 50%; background: #ddd; }
+    .dot.f { background: #1a56a0; }
+
+    .proj-item { padding: 0.8rem 0; border-bottom: 0.5px solid #e0e0e0; }
+    .proj-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .proj-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; }
+    .proj-title { font-size: 13px; font-weight: 500; color: #222; display: flex; align-items: center; gap: 6px; }
+    .proj-badge { font-size: 10px; border-radius: 10px; padding: 2px 8px; white-space: nowrap; flex-shrink: 0; }
+    .pb-blue  { background: #e8f0fb; color: #1a56a0; }
+    .pb-green { background: #e6f4ea; color: #2d7a3a; }
+    .pb-amber { background: #FAEEDA; color: #633806; }
+    .proj-desc { font-size: 12px; color: #555; margin-top: 4px; line-height: 1.5; }
+    .tag-row { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 6px; }
+    .tag { font-size: 10px; padding: 2px 7px; border-radius: 8px; background: #f2f2f2; color: #555; border: 0.5px solid #ddd; }
+
+    .skill-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+    .skill-item { font-size: 12px; color: #555; display: flex; align-items: center; gap: 6px; }
+    .skill-item i { font-size: 14px; color: #1a56a0; }
+
+    .stat-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 0.75rem; margin-bottom: 1rem; }
+    .stat-card { background: #f2f2f2; border-radius: 8px; padding: 0.85rem 1rem; text-align: center; }
+    .stat-num { font-size: 22px; font-weight: 500; color: #222; }
+    .stat-label { font-size: 11px; color: #666; margin-top: 2px; }
+
+    .link-btn { display: inline-flex; align-items: center; gap: 6px; font-size: 12px; color: #1a56a0; border: 0.5px solid #bbb; border-radius: 8px; padding: 6px 12px; text-decoration: none; background: #fff; }
+    .link-btn:hover { background: #f0f0f0; }
+
+    @keyframes blink { 0%,88%,100%{transform:scaleY(1)} 92%{transform:scaleY(0.05)} }
+    @keyframes float { 0%,100%{transform:translateY(0px) rotate(0deg)} 50%{transform:translateY(-4px) rotate(0.4deg)} }
+    @keyframes headphone-glow { 0%,100%{opacity:0.6} 50%{opacity:1} }
+    @keyframes breathe { 0%,100%{transform:scaleY(1)} 50%{transform:scaleY(1.015)} }
+    .eye-l { animation: blink 5s 0.2s infinite; transform-origin: 39px 36px; }
+    .eye-r { animation: blink 5s 0.5s infinite; transform-origin: 55px 36px; }
+    .av-float { animation: float 4s ease-in-out infinite; }
+    .av-chest { animation: breathe 3.4s ease-in-out infinite; transform-origin: 50px 80px; }
+    .hp-glow { animation: headphone-glow 2.6s ease-in-out infinite; }
+  </style>
 </head>
 <body>
+<div class="cv-wrap">
 
-    <header>
-        <h1>M.Sc. Romel Percy Melgarejo Bolivar</h1>
-        <p>Ingeniero Estadístico e Informático | Especialista en TI, Ciencia de Datos y Docencia Universitaria</p>
-    </header>
+  <!-- HEADER -->
+  <div class="header-card">
+    <svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" style="flex-shrink:0">
+      <defs>
+        <radialGradient id="skinGrad" cx="40%" cy="35%" r="70%">
+          <stop offset="0%" stop-color="#FAD7C0"/>
+          <stop offset="100%" stop-color="#E8B193"/>
+        </radialGradient>
+        <linearGradient id="hairGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#2b2b3a"/>
+          <stop offset="100%" stop-color="#15151f"/>
+        </linearGradient>
+        <linearGradient id="shirtGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#2c6fc2"/>
+          <stop offset="100%" stop-color="#134a8a"/>
+        </linearGradient>
+      </defs>
 
-    <div class="container">
-        
-        <!-- SECCIÓN 1: RESUMEN EJECUTIVO -->
-        <section id="resumen">
-            <h2>📝 Resumen Profesional</h2>
-            <p>Profesional peruano de la ingeniería con competencias avanzadas en Ciencia de Datos, redes telemáticas, tecnologías Web y simulación de entornos tridimensionales. Sólido trasfondo en la investigación científica aplicada al ámbito de la salud y educación, respaldado por la dirección de proyectos y cargos de liderazgo institucional en la región Puno [CTI Vitae - CONCYTEC].</p>
-        </section>
+      <circle cx="50" cy="50" r="47" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.18)" stroke-width="1"/>
 
-        <!-- SECCIÓN 2: FORMACIÓN ACADÉMICA Y IDIOMAS (DISEÑO EN CUADRÍCULA) -->
-        <div class="grid-2">
-            <section id="educacion">
-                <h2>🎓 Formación Superior</h2>
-                <ul>
-                    <li>
-                        <strong>Magíster Scientiae en Informática</strong><br>
-                        Mención en Gerencia de TIC — Universidad Nacional del Altiplano [CTI Vitae - CONCYTEC]
-                    </li>
-                    <li>
-                        <strong>Ingeniero Estadístico e Informático</strong><br>
-                        Título Profesional — Universidad Nacional del Altiplano [CTI Vitae - CONCYTEC]
-                    </li>
-                    <li>
-                        <strong>Bachiller en Ciencias Estadísticas e Informática</strong><br>
-                        Grado Académico — Universidad Nacional del Altiplano [CTI Vitae - CONCYTEC]
-                    </li>
-                    <li>
-                        <strong>Especialidad en Mecatrónica Automotriz</strong><br>
-                        Estudios Técnicos — I.S.T. José Antonio Encinas (Puno)
-                    </li>
-                </ul>
-            </section>
+      <g class="av-float">
+        <!-- Sombra suave -->
+        <ellipse cx="50" cy="90" rx="26" ry="4" fill="#000" opacity="0.12"/>
 
-            <section id="idiomas">
-                <h2>🌐 Competencias Lingüísticas</h2>
-                <ul>
-                    <li><strong>Quechua:</strong> Lengua Nativa (Nivel Avanzado)</li>
-                    <li><strong>Inglés:</strong> Nivel Intermedio (Lectura y Escritura)</li>
-                    <li><strong>Portugués:</strong> Nivel Intermedio (Certificado de Suficiencia)</li>
-                </ul>
-                <br>
-                <div style="text-align: center;">
-                    <a href="https://concytec.gob.pe" target="_blank" class="btn-verify">
-                        ✓ Verificar Perfil Oficial CONCYTEC
-                    </a>
-                </div>
-            </section>
+        <!-- Cuello -->
+        <rect x="44" y="46" width="12" height="12" rx="4" fill="#E0A687"/>
+
+        <!-- Cuerpo / torso -->
+        <g class="av-chest">
+          <path d="M30 68 Q50 58 70 68 L74 92 Q50 100 26 92 Z" fill="url(#shirtGrad)"/>
+          <path d="M44 64 L50 70 L56 64 L56 60 L44 60 Z" fill="#1d3a63"/>
+          <rect x="22" y="68" width="13" height="20" rx="6" fill="#2c6fc2"/>
+          <rect x="65" y="68" width="13" height="20" rx="6" fill="#2c6fc2"/>
+          <rect x="34" y="86" width="11" height="14" rx="5" fill="#15151f"/>
+          <rect x="55" y="86" width="11" height="14" rx="5" fill="#15151f"/>
+        </g>
+
+        <!-- Cabeza -->
+        <ellipse cx="50" cy="35" rx="16.5" ry="17.5" fill="url(#skinGrad)"/>
+        <!-- sombreado lateral de la cara -->
+        <path d="M62 28 Q66 38 60 48 Q64 36 60 27 Z" fill="#D89B7C" opacity="0.45"/>
+
+        <!-- Orejas -->
+        <ellipse cx="33" cy="36" rx="3" ry="4.5" fill="#E8B193"/>
+        <ellipse cx="67" cy="36" rx="3" ry="4.5" fill="#E8B193"/>
+
+        <!-- Cabello -->
+        <path d="M32 24 Q34 10 50 9 Q66 10 68 24 Q69 30 66 36 Q67 25 60 21 Q58 27 50 26 Q42 27 40 21 Q33 25 34 36 Q31 30 32 24Z" fill="url(#hairGrad)"/>
+        <path d="M33 23 Q35 14 44 11 Q39 16 38 24 Z" fill="#3a3a4d" opacity="0.6"/>
+
+        <!-- Cejas -->
+        <path d="M40 30 Q43.5 28.3 47 29.6" stroke="#3a2a1f" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+        <path d="M53 29.6 Q56.5 28.3 60 30" stroke="#3a2a1f" stroke-width="1.3" fill="none" stroke-linecap="round"/>
+
+        <!-- Ojos -->
+        <g class="eye-l">
+          <ellipse cx="43.5" cy="34" rx="3.4" ry="3" fill="#fff"/>
+          <circle cx="44.3" cy="34.3" r="2.1" fill="#3c2415"/>
+          <circle cx="43.6" cy="33.5" r="0.7" fill="#fff"/>
+        </g>
+        <g class="eye-r">
+          <ellipse cx="57" cy="34" rx="3.4" ry="3" fill="#fff"/>
+          <circle cx="57.8" cy="34.3" r="2.1" fill="#3c2415"/>
+          <circle cx="57.1" cy="33.5" r="0.7" fill="#fff"/>
+        </g>
+
+        <!-- Nariz -->
+        <path d="M49 35 Q48 39 50 40.5 Q52 39 51 35" stroke="#D89B7C" stroke-width="1" fill="none" stroke-linecap="round"/>
+
+        <!-- Boca -->
+        <path d="M44 43.5 Q50 47.5 56 43.5" stroke="#B5705A" stroke-width="1.6" fill="none" stroke-linecap="round"/>
+
+        <!-- Rubor -->
+        <ellipse cx="38" cy="40" rx="3.2" ry="1.8" fill="#F2A98C" opacity="0.4"/>
+        <ellipse cx="62" cy="40" rx="3.2" ry="1.8" fill="#F2A98C" opacity="0.4"/>
+
+        <!-- Audífonos -->
+        <path d="M31 30 Q31 13 50 12 Q69 13 69 30" stroke="#1a1a2e" stroke-width="3.2" fill="none" stroke-linecap="round"/>
+        <rect class="hp-glow" x="27" y="29" width="9" height="13" rx="4" fill="#3a8de0"/>
+        <rect class="hp-glow" x="64" y="29" width="9" height="13" rx="4" fill="#3a8de0"/>
+
+        <!-- Laptop / detalle código en el pecho -->
+        <rect x="42" y="76" width="16" height="9" rx="1.5" fill="rgba(255,255,255,0.15)"/>
+        <text x="50" y="83" font-size="5" text-anchor="middle" fill="rgba(255,255,255,0.65)" font-family="monospace">&lt;/&gt;</text>
+      </g>
+    </svg>
+    <div class="header-text">
+      <h1>Raul Cristian Chura Chambilla</h1>
+      <p>Estudiante de Ingeniería Estadística e Informática · UNAP</p>
+      <p>Facultad de Ingeniería Estadística e Informática · FINESI</p>
+      <div class="badges">
+        <span class="badge badge-code">Código: 236567</span>
+      </div>
+      <div class="contact-row">
+        <span class="contact-item"><i class="ti ti-brand-whatsapp"></i> +51 917 878 431</span>
+        <span class="contact-item"><i class="ti ti-mail"></i> raulcristianchurachambilla@gmail.com</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stat-row">
+    <div class="stat-card"><div class="stat-num">4+</div><div class="stat-label">Proyectos completados</div></div>
+    <div class="stat-card"><div class="stat-num">4</div><div class="stat-label">Idiomas</div></div>
+    <div class="stat-card"><div class="stat-num">3+</div><div class="stat-label">Herramientas dominadas</div></div>
+  </div>
+
+  <!-- INFO + SKILLS -->
+  <div class="two-col">
+    <div class="section-card no-mb">
+      <div class="section-title"><i class="ti ti-user"></i> Información personal</div>
+      <div style="display:flex;flex-direction:column;gap:0.6rem;">
+        <div><div class="info-label">Institución</div><div class="info-value">UNAP – Puno, Perú</div></div>
+        <div><div class="info-label">Facultad</div><div class="info-value">FINESI · IEI</div></div>
+        <div><div class="info-label">Residencia</div><div class="info-value">Puno, Perú</div></div>
+        <div><div class="info-label">Intereses</div><div class="info-value">Econometría · Data Science · Dev móvil</div></div>
+      </div>
+    </div>
+    <div class="section-card no-mb">
+      <div class="section-title"><i class="ti ti-device-laptop"></i> Habilidades técnicas</div>
+      <div class="skill-grid">
+        <div class="skill-item"><i class="ti ti-brand-python"></i> Python</div>
+        <div class="skill-item"><i class="ti ti-table"></i> Excel avanzado</div>
+        <div class="skill-item"><i class="ti ti-chart-bar"></i> EViews</div>
+        <div class="skill-item"><i class="ti ti-brand-github"></i> Git / GitHub</div>
+        <div class="skill-item"><i class="ti ti-database"></i> Base de datos avanzado</div>
+        <div class="skill-item"><i class="ti ti-brand-react"></i> React (básico)</div>
+        <div class="skill-item"><i class="ti ti-math"></i> Estadística inf.</div>
+        <div class="skill-item"><i class="ti ti-api"></i> APIs REST</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PROYECTOS -->
+  <div class="section-card" style="margin-top:1rem">
+    <div class="section-title"><i class="ti ti-rocket"></i> Proyectos</div>
+
+    <div class="proj-item">
+      <div class="proj-header">
+        <div class="proj-title"><i class="ti ti-device-mobile"></i> App de gestión de gastos personales</div>
+        <span class="proj-badge pb-green">Completado</span>
+      </div>
+      <div class="proj-desc">Aplicación móvil desarrollada con React Native para el registro y visualización de gastos mensuales. Incluye gráficos de distribución por categoría, alertas de presupuesto y exportación de reportes en PDF.</div>
+      <div class="tag-row"><span class="tag">React Native</span><span class="tag">JavaScript</span><span class="tag">AsyncStorage</span><span class="tag">Chart.js</span></div>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-header">
+        <div class="proj-title"><i class="ti ti-chart-line"></i> Análisis econométrico ARCH/GARCH</div>
+        <span class="proj-badge pb-blue">Académico</span>
+      </div>
+      <div class="proj-desc">Simulación de series de tiempo con agrupamiento de volatilidad. Diagnóstico con pruebas ARCH-LM, ADF, PP y KPSS en EViews y Python. Parámetro α ≈ 0.87 para rechazo robusto de homocedasticidad.</div>
+      <div class="tag-row"><span class="tag">EViews</span><span class="tag">Python</span><span class="tag">ARCH-LM</span><span class="tag">Series de tiempo</span></div>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-header">
+        <div class="proj-title"><i class="ti ti-world"></i> Portal web de estadísticas regionales</div>
+        <span class="proj-badge pb-amber">En desarrollo</span>
+      </div>
+      <div class="proj-desc">Sitio web interactivo para visualizar indicadores socioeconómicos de la región Puno. Consume datos abiertos del INEI mediante APIs. Dashboard con mapas y gráficos dinámicos con D3.js.</div>
+      <div class="tag-row"><span class="tag">HTML/CSS</span><span class="tag">JavaScript</span><span class="tag">D3.js</span><span class="tag">API INEI</span></div>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-header">
+        <div class="proj-title"><i class="ti ti-table"></i> Modelos de regresión y ANOVA en Excel</div>
+        <span class="proj-badge pb-blue">Académico</span>
+      </div>
+      <div class="proj-desc">Hoja consolidada con regresión lineal simple, bandas Working-Hotelling, análisis de varianza y pruebas de hipótesis con fórmulas completamente visibles y documentadas.</div>
+      <div class="tag-row"><span class="tag">Excel</span><span class="tag">Regresión lineal</span><span class="tag">ANOVA</span><span class="tag">Working-Hotelling</span></div>
+    </div>
+
+    <div class="proj-item">
+      <div class="proj-header">
+        <div class="proj-title"><i class="ti ti-terminal-2"></i> Pipeline de análisis de datos en Python</div>
+        <span class="proj-badge pb-green">Completado</span>
+      </div>
+      <div class="proj-desc">Script automatizado para limpiar, explorar y visualizar datos tabulares. Incluye pruebas de hipótesis, correlaciones y exportación de reportes automáticos.</div>
+      <div class="tag-row"><span class="tag">Python</span><span class="tag">Pandas</span><span class="tag">Matplotlib</span><span class="tag">Scipy</span><span class="tag">Seaborn</span></div>
+    </div>
+  </div>
+
+  <!-- FORMACIÓN + IDIOMAS -->
+  <div class="two-col">
+    <div class="section-card no-mb">
+      <div class="section-title"><i class="ti ti-book"></i> Formación académica</div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div>
+          <div class="tl-title">Ingeniería Estadística e Informática</div>
+          <div class="tl-sub">UNAP · FINESI · Puno</div>
+          <span class="tl-tag">En curso</span>
         </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div>
+          <div class="tl-title">Estudios de idiomas certificados</div>
+          <div class="tl-sub">Inglés y portugués nivel intermedio</div>
+          <span class="tl-tag green">Certificado</span>
+        </div>
+      </div>
+      <div class="tl-item">
+        <div class="tl-dot"></div>
+        <div>
+          <div class="tl-title">Curso de desarrollo móvil</div>
+          <div class="tl-sub">React Native · Aprendizaje autodidacta</div>
+          <span class="tl-tag green">Completado</span>
+        </div>
+      </div>
+    </div>
 
-        <!-- SECCIÓN 3: EXPERIENCIA INSTITUCIONAL -->
-        <section id="experiencia">
-            <h2>💼 Experiencia Laboral e Institucional</h2>
-            <ul>
-                <li>
-                    <strong>Presidente del Capítulo de Ingenieros Estadísticos e Informáticos</strong><br>
-                    Colegio de Ingenieros del Perú — Consejo Departamental Puno
-                    <br><span class="badge">Octubre 2022 - Actualidad</span>
-                </li>
-                <li>
-                    <strong>Docente Universitario Ordinario / Investigador</strong><br>
-                    Universidad Nacional del Altiplano Puno (UNA Puno)
-                    <br><span class="badge">2020 - Actualidad</span>
-                </li>
-                <li>
-                    <strong>Docente Auxiliar Ordinario</strong><br>
-                    Universidad Nacional de Moquegua (UNAM) [CTI Vitae - CONCYTEC]
-                </li>
-            </ul>
-        </section>
+    <div class="section-card no-mb">
+      <div class="section-title"><i class="ti ti-message-language"></i> Idiomas</div>
+      <div class="lang-grid">
+        <div class="lang-card">
+          <div><div class="lang-name">Aymara</div><div class="lang-level">Lengua materna</div></div>
+          <div class="lang-dots"><div class="dot f"></div><div class="dot f"></div><div class="dot f"></div><div class="dot f"></div><div class="dot f"></div></div>
+        </div>
+        <div class="lang-card">
+          <div><div class="lang-name">Español</div><div class="lang-level">Fluido</div></div>
+          <div class="lang-dots"><div class="dot f"></div><div class="dot f"></div><div class="dot f"></div><div class="dot f"></div><div class="dot f"></div></div>
+        </div>
+        <div class="lang-card">
+          <div><div class="lang-name">Inglés</div><div class="lang-level">Intermedio</div></div>
+          <div class="lang-dots"><div class="dot f"></div><div class="dot f"></div><div class="dot f"></div><div class="dot"></div><div class="dot"></div></div>
+        </div>
+        <div class="lang-card">
+          <div><div class="lang-name">Portugués</div><div class="lang-level">Intermedio</div></div>
+          <div class="lang-dots"><div class="dot f"></div><div class="dot f"></div><div class="dot f"></div><div class="dot"></div><div class="dot"></div></div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        <!-- SECCIÓN 4: PROPIEDAD INTELECTUAL -->
-        <section id="propiedad-intelectual">
-            <h2>🛠️ Registro de Software y Patentes (INDECOPI)</h2>
-            <p style="color: #6b7280; font-size: 0.9rem; margin-bottom: 1rem;">Soluciones tecnológicas y sistemas con derechos de autor reconocidos por el Estado Peruano:</p>
-            <ul>
-                <li>
-                    <span class="project-title">Criptologin</span> — Módulo integrable de validación de usuarios mediante token USB DNI electrónico (Reg. 31152022) [CTI Vitae - CONCYTEC].
-                </li>
-                <li>
-                    <span class="project-title">Enviromaker</span> — Software de procesamiento y generación de ambientes tridimensionales (Reg. 31132022) [CTI Vitae - CONCYTEC].
-                </li>
-                <li>
-                    <span class="project-title">GLPAK GUI</span> — Interfaz gráfica para renderizado 3D en ventanas Win GDI+ (Reg. 31122022) [CTI Vitae - CONCYTEC].
-                </li>
-                <li>
-                    <span class="project-title">Plataforma de Certificación Electrónica</span> — Desarrollo arquitectónico de software para emisión de firmas seguras (Reg. 1382017) [CTI Vitae - CONCYTEC].
-                </li>
-            </ul>
-        </section>
+  <!-- LINKS -->
+  <div class="section-card" style="margin-top:1rem">
+    <div class="section-title"><i class="ti ti-link"></i> Perfiles y redes</div>
+    <div style="display: flex; gap: 0.75rem; flex-wrap: wrap;">
+      <a class="link-btn" href="https://github.com/raulcristianchurachambilla-cmd" target="_blank">
+        <i class="ti ti-brand-github" style="font-size:15px"></i> GitHub
+      </a>
+      <a class="link-btn" href="https://orcid.org/0009-0006-6195-3202" target="_blank">
+        <i class="ti ti-id-badge" style="font-size:15px"></i> ORCID · 0009-0006-6195-3202
+      </a>
+    </div>
+  </div>
 
-        <!-- SECCIÓN 5: PRODUCCIÓN CIENTÍFICA -->
-        <section id="investigacion">
-            <h2>🔬 Producción Científica e Investigación</h2>
-            <ul>
-                <li>
-                    <strong>Capítulo de Libro (2023):</strong> "Predicción de diabetes en mujeres mediante un modelo probabilístico basado en Redes Bayesianas" en la publicación internacional <em>O Cuidado em Saúde Baseado em Evidências</em> [CTI Vitae - CONCYTEC].
-                </li>
-                <li>
-                    <strong>Artículo de Revista (2022):</strong> "Arquitectura pervasiva con tecnologías WebRTC híbridas para el desarrollo de un framework Modelo Vista Controlador de tiempo real" [CTI Vitae - CONCYTEC].
-                </li>
-                <li>
-                    <strong>Tesis de Postgrado (2021):</strong> "Redes privadas virtuales multimedia y su influencia en la seguridad de la información" — Universidad Nacional del Altiplano.
-                </li>
-            </ul>
-            
-            <!-- CONTENEDOR DE ENLACES DE VERIFICACIÓN -->
+</div>
+</body>
+</html>
